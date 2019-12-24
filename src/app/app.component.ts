@@ -56,19 +56,19 @@ export class AppComponent implements OnInit {
 
         //     });
 
-        // timer(3000000, 2000)
-        //   .subscribe(x => {
-        //     if (x % 3 == 0) {
-        //       console.log('timer: ' + x);
-        //       this.router.navigateByUrl('/');
-        //     } else if (x % 3 == 1) {
-        //       console.log('timer: ' + x);
-        //       this.router.navigateByUrl('/list');
-        //     } else {
-        //       console.log('timer: ' + x);
-        //       this.router.navigateByUrl('/users');
-        //     }
-        //   })
+        timer(300, 2000)
+            .subscribe(x => {
+                if (x % 3 === 0) {
+                    console.log('timer: ' + x);
+                    this.router.navigateByUrl('/');
+                } else if (x % 3 === 1) {
+                    console.log('timer: ' + x);
+                    this.router.navigateByUrl('/organizations-list');
+                } else {
+                    console.log('timer: ' + x);
+                    this.router.navigateByUrl('/users-list');
+                }
+            })
 
         // this.list();
     }

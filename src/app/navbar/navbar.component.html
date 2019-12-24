@@ -1,54 +1,26 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
-  <a class="navbar-brand" [routerLink]="['/']">Dashboard</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          href="#"
-          href="#"
-          routerLink="/users-list"
-          [routerLinkActive]="['is-active']"
-          [routerLinkActiveOptions]="{ exact: true }"
-          >Users</a
-        >
-      </li>
-      <li class="nav-item" *ngIf="userRole == 'admin'">
-        <a
-          class="nav-link"
-          href="#"
-          href="#"
-          routerLink="/organizations-list"
-          [routerLinkActive]="['is-active']"
-          [routerLinkActiveOptions]="{ exact: true }"
-          >Organizations</a
-        >
-      </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success mb-3">
+    <a class="navbar-brand" [routerLink]="['/']">Client App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" href="#" routerLink="/users-list" [routerLinkActive]="['is-active']"
+                    [routerLinkActiveOptions]="{ exact: true }">Users</a>
+            </li>
+            <li class="nav-item" *ngIf="userRole == 'admin'">
+                <a class="nav-link" href="#" href="#" routerLink="/organizations-list"
+                    [routerLinkActive]="['is-active']" [routerLinkActiveOptions]="{ exact: true }">Organizations</a>
+            </li>
 
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          href="#"
-          href="#"
-          routerLink="/customers"
-          [routerLinkActive]="['is-active']"
-          [routerLinkActiveOptions]="{ exact: true }"
-          >Customers</a
-        >
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto"></ul>
-  </div>
+            <li class="nav-item">
+                <a class="nav-link" href="#" href="#" routerLink="/customers" [routerLinkActive]="['is-active']"
+                    [routerLinkActiveOptions]="{ exact: true }">Customers</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto"></ul>
+    </div>
 </nav>
 <!-- <div>{{ organizationId + " " + userRole }}</div> -->
