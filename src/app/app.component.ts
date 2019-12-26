@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
 
         //     });
 
-        timer(300, 2000)
+        timer(300000, 2000)
             .subscribe(x => {
                 if (x % 3 === 0) {
                     console.log('timer: ' + x);
